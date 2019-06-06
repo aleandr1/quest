@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+			<img src="door.png" class="col-4 next loc1" style="height: 400px; width:250px; margin-left: 150px;">
+			<img src="warddrope.jpg" class="col-4 next1 loc2"style="height: 400px; width:250px;">
+			<img src="portal.jpg" class="col-4 loc3"style="height: 400px; width:250px;">
+	</div>
+
+	<div style="background-image:url(bg.jpg); background-size: 100% 100%; height: 800px; display: none" class="Hogwarts">
+		<h3 class="text-white">HELP HARRY POTTER TO FIND MAGIC STICK, SUIT AND BROOM!!! </h3>
+		<h1 class="text-white score">0</h1>
+		<button class="btn btn-success exit">EXIT</button>
+		<img src="metla.png" style="height: 50px; width: 70px; position: absolute; margin-left: 720px; margin-top: 437px;" class="item2">
+		<img src="suit.png" style="height: 50px; width: 70px; position: absolute; margin-top: 220px;" class="item3">
+		<img src="palochka.png" style="height: 50px; width: 70px; position: absolute; margin-left: 600px;" class="item4">
+		<img src="ring.png" style="height: 50px; width: 70px; position: absolute; margin-left: 100px; margin-top: 600px;" class="item5">
+		<img src="gun.png" style="height: 50px; width: 70px; position: absolute; margin-left: 892px; margin-top: 471px;" class="item1">
+	</div>
+	<div style="background-image: url(ban.jpg); background-size: 100% 100%; height: 800px; display: none" class="Narnia">
+		<h3>HELP ASLAN TO FIND RARE ITEMS</h3>
+		<h1 class="text-white score1">0</h1>
+		<button class="btn btn-success">EXIT</button>
+		<img src="sword.png" style="height: 50px; width: 70px; position: absolute; margin-top: 620px; margin-left: 401px;" class="i1">
+		<img src="shield.png" style="height: 50px; width: 70px; position: absolute; margin-top: 176px; margin-left: 374px;" class="i2">
+		<img src="zanpakto.png" style="height: 50px; width: 70px; position: absolute; margin-top: 482px; margin-left: 100px;" class="i3">
+		<img src="note.png" style="height: 50px; width: 70px; position: absolute; margin-left: 209px;" class="i4">
+		<img src="bow.png" style="height: 50px; width: 70px; position: absolute; margin-left: 302px; margin-top: 138px;" class="i5">
+	</div>
+	<script type="text/javascript">
+		let score = 0;
+		
+
+		
+	document.querySelector(".next").onclick = function(){
+		alert("Welcome to Hogwarts")
+		document.querySelector(".loc1").style.display = "none"
+		document.querySelector(".loc2").style.display = "none"
+		document.querySelector(".loc3").style.display = "none"
+		document.querySelector(".Hogwarts").style.display = "block"
+	}
+	document.querySelector(".item1").onclick = function(){
+		alert("IDIOT")	
+		document.querySelector(".item1").style.display = "block"
+		document.querySelector(".item2").style.display = "block"
+		document.querySelector(".item3").style.display = "block"
+		document.querySelector(".item4").style.display = "block"
+		document.querySelector(".item5").style.display = "block"
+	}
+	document.querySelector(".item2").onclick = function(){
+		 score=score+1
+		 document.querySelector(".score").innerHTML = score
+		document.querySelector(".item2").style.display = "none"
+	}
+	document.querySelector(".item3").onclick = function(){
+		score=score+1
+		document.querySelector(".score").innerHTML = score
+		document.querySelector(".item3").style.display = "none"
+	}
+	document.querySelector(".item4").onclick = function(){
+		score=score+1
+		document.querySelector(".score").innerHTML = score
+		document.querySelector(".item4").style.display = "none"
+	}
+	document.querySelector(".item5").onclick = function(){
+		alert("DAMN REPEAT AGGAIN")
+		document.querySelector(".item1").style.display = "block"
+		document.querySelector(".item2").style.display = "block"
+		document.querySelector(".item3").style.display = "block"
+		document.querySelector(".item4").style.display = "block"
+		document.querySelector(".item5").style.display = "block"
+	}
+	document.querySelector(".exit").onclick = function(){
+		alert("ARE U SURE?")
+		document.querySelector(".loc1").style.display = "block"
+		document.querySelector(".loc2").style.display = "block"
+		document.querySelector(".loc3").style.display = "block"
+		document.querySelector(".Hogwarts").style.display = "none"	
+	}
+
+
+
+	//2
+	document.querySelector(".next1").onclick = function(){
+		alert("Welcome to Narnia")
+		document.querySelector(".loc1").style.display = "none"
+		document.querySelector(".loc2").style.display = "none"
+		document.querySelector(".loc3").style.display = "none"
+		document.querySelector(".Narnia").style.display = "block"
+	}
+	document.querySelector(".i1").onclick = function(){
+		document.querySelector(".i1").style.display = "none"
+		score1=score1+1
+		 document.querySelector(".score").innerHTML = score
+	}
+	document.querySelector(".i2").onclick = function(){
+		document.querySelector(".i2").style.display = "none"
+		score1=score1+1
+		 document.querySelector(".score").innerHTML = score
+	}
+	document.querySelector(".i3").onclick = function(){
+		document.querySelector(".i1").style.display = "block"
+		document.querySelector(".i2").style.display = "block"
+		document.querySelector(".i3").style.display = "block"
+		document.querySelector(".i4").style.display = "block"
+		alert("TEBYA BANKAI KILL")
+		 document.querySelector(".score").innerHTML = score
+	}
+	document.querySelector(".i4").onclick = function(){
+		document.querySelector(".i1").style.display = "block"
+		document.querySelector(".i2").style.display = "block"
+		document.querySelector(".i3").style.display = "block"
+		document.querySelector(".i4").style.display = "block"
+		alert("TEBYA ZAPISALI V DEATH NOTE AND YOU DIED")
+		 document.querySelector(".score").innerHTML = score
+	}
+	document.querySelector(".i5").onclick = function(){
+		document.querySelector(".i5").style.display = "none"
+		score1=score1+1
+		 document.querySelector(".score").innerHTML = score
+	}
+
+	</script>
+</body>
+</html>
